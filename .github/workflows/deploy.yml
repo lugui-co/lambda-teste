@@ -9,7 +9,7 @@ on:
 
 jobs:
   run_deploy:
-    uses: lugui-co/infra-github-pipelines/.github/workflows/lambda.yml@production
+    uses: lugui-co/infra-github-pipelines/.github/workflows/lambda_docker.yml@production
     with:
       environment: ${{ github.ref_name }}
     secrets: inherit
